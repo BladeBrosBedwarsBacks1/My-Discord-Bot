@@ -1,3 +1,5 @@
+// utils/database.js
+
 const fs = require('fs');
 const path = require('path');
 const dbPath = path.join(__dirname, '../data/database.json');
@@ -18,6 +20,7 @@ const getUser = (userId) => {
     const db = loadDatabase();
     if (!db[userId]) {
         db[userId] = {
+            year_group: 11,
             weaknesses: {
                 maths: {},
                 english: {},
@@ -27,6 +30,12 @@ const getUser = (userId) => {
         saveDatabase(db);
     }
     return db[userId];
+};
+
+const updateUser = (userId, userData) => {
+    const db = loadDatabase();
+    db[userId] = userData;
+    saveDatabase(db);
 };
 
 const updateWeaknesses = (userId, subject, topic, isCorrect) => {
@@ -45,5 +54,6 @@ const updateWeaknesses = (userId, subject, topic, isCorrect) => {
 
 module.exports = {
     getUser,
+    updateUser,
     updateWeaknesses
 };
