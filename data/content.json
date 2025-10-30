@@ -1,0 +1,32 @@
+{
+  "maths": {
+    "algebra": [
+      { "q": "Expand and simplify $(x+5)(x-3)$.", "a": "$x^2+2x-15$" },
+      { "q": "Solve $2x+4=10$.", "a": "$x=3$" }
+    ],
+    "geometry": [
+      { "q": "Calculate the area of a circle with a radius of 5.", "a": "$25π$" },
+      { "q": "Find the perimeter of a rectangle with length 8 and width 3.", "a": "22" }
+    ]
+  },
+  "english": {
+    "literary_devices": [
+      { "q": "What is the literary term for a comparison using 'like' or 'as'?", "a": "Simile" },
+      { "q": "What is the literary term for a contrast between what is said and what is actually meant?", "a": "Irony" }
+    ],
+    "creative_writing": [
+      { "q": "Write an opening paragraph for a story about a mysterious disappearance.", "a": "Creative answer" },
+      { "q": "Describe a setting where an important secret is revealed.", "a": "Descriptive answer" }
+    ]
+  },
+  "science": {
+    "biology": [
+      { "q": "What is the powerhouse of the cell?", "a": "Mitochondria" },
+      { "q": "Describe the process of photosynthesis.", "a": "Photosynthesis is the process used by plants..." }
+    ],
+    "chemistry": [
+      { "q": "What is the chemical symbol for gold?", "a": "Au" },
+      { "q": "What happens when you mix an acid and a base?", "a": "Neutralisation" }
+    ]
+  }
+}
